@@ -1,20 +1,6 @@
-<<<<<<< HEAD
-body {
-    background-color: #252629;
-}
-
-.backgroundImage {
-    width: 100%;
-    height: 70vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-=======
 /* universal classes */
 .sticky{
     position:sticky;
->>>>>>> 88ef3ea (Fixed page layout, added page content, navbar kindoff exists)
 }
 
 .parent {
@@ -22,16 +8,6 @@ body {
 }
 
 .child {
-<<<<<<< HEAD
-    width: calc(100vw - (100vw - 100%));
-    position: absolute;
-    text-align: center;
-    top: 0vh;
-}
-
-.title {
-    padding-top: 10vh;
-=======
     position: absolute;
 }
 
@@ -100,7 +76,6 @@ body {
 
 .title {
     padding-top: 22vh;
->>>>>>> 88ef3ea (Fixed page layout, added page content, navbar kindoff exists)
     color: #20C20E;
     font-size: 7.5vh;
 
@@ -111,26 +86,13 @@ body {
 
 .subtitle {
     color: #20C20E;
-<<<<<<< HEAD
-=======
     font-size: clamp(2.5vh, 10px, 200px);
->>>>>>> 88ef3ea (Fixed page layout, added page content, navbar kindoff exists)
 
     font-family: 'ledfontsharpRegular';
     font-weight: normal;
     font-style: normal;
 }
 
-<<<<<<< HEAD
-.blurbackground {
-    backdrop-filter: blur(8px);
-    height:99.4%;
-    width:100%;
-}
-
-.elevatorpitch {
-    
-=======
 .coverimage {
     width: calc(100vw - (100vw - 100%));
     text-align: center;
@@ -148,5 +110,4 @@ body {
     height:25vh;
     border-radius:50%;
     box-shadow: 1vh 1vh 1vh black;
->>>>>>> 88ef3ea (Fixed page layout, added page content, navbar kindoff exists)
 }
