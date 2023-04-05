@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: #252629;
 }
@@ -9,6 +10,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+=======
+/* universal classes */
+.sticky{
+    position:sticky;
+>>>>>>> 88ef3ea (Fixed page layout, added page content, navbar kindoff exists)
 }
 
 .parent {
@@ -16,6 +22,7 @@ body {
 }
 
 .child {
+<<<<<<< HEAD
     width: calc(100vw - (100vw - 100%));
     position: absolute;
     text-align: center;
@@ -24,6 +31,76 @@ body {
 
 .title {
     padding-top: 10vh;
+=======
+    position: absolute;
+}
+
+.flex {
+    display: flex;
+}
+
+.reset {
+    margin:0px;
+    padding:0px;
+}
+
+.cl {
+    list-style-type: none;
+    padding-left:5vw;
+    padding-right:5vw;
+    overflow: hidden;
+}
+
+.blurbackground {
+    backdrop-filter: blur(9px);
+}
+
+.cl-item {
+    display: inline-block;
+}
+
+.container {
+    background-color:#18181a;
+    border-radius:15px;
+    margin-top:2vh;
+    margin-bottom:2vh;
+    margin-left:2vw;
+    margin-right:2vw;
+    padding-top:2vh;
+    padding-bottom:2vh;
+    padding-left:2vw;
+    padding-right:2vw;
+}
+
+/* navbar classes */
+
+nav {
+    background-color:#1f1f21;
+    position:fixed;
+    top:0px;
+    z-index:9999;
+    width:100%;
+}
+
+.navbar {
+    height:clamp();
+}
+
+/* specific classes*/
+
+body {
+    background-color: #252629;
+    margin: 0px;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 70vh;
+}
+
+.title {
+    padding-top: 22vh;
+>>>>>>> 88ef3ea (Fixed page layout, added page content, navbar kindoff exists)
     color: #20C20E;
     font-size: 7.5vh;
 
@@ -34,12 +111,17 @@ body {
 
 .subtitle {
     color: #20C20E;
+<<<<<<< HEAD
+=======
+    font-size: clamp(2.5vh, 10px, 200px);
+>>>>>>> 88ef3ea (Fixed page layout, added page content, navbar kindoff exists)
 
     font-family: 'ledfontsharpRegular';
     font-weight: normal;
     font-style: normal;
 }
 
+<<<<<<< HEAD
 .blurbackground {
     backdrop-filter: blur(8px);
     height:99.4%;
@@ -48,4 +130,23 @@ body {
 
 .elevatorpitch {
     
+=======
+.coverimage {
+    width: calc(100vw - (100vw - 100%));
+    text-align: center;
+    top: 0vh;
+    width: 100%;
+    height: 70vh;
+}
+
+.content {
+    color:rgb(230, 230, 230);
+    font-size:clamp(16px,2vh,48px);
+}
+
+.profilepicture {
+    height:25vh;
+    border-radius:50%;
+    box-shadow: 1vh 1vh 1vh black;
+>>>>>>> 88ef3ea (Fixed page layout, added page content, navbar kindoff exists)
 }
