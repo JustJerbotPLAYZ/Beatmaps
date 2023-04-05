@@ -21,7 +21,6 @@
 }
 
 .cl {
-    list-style-type: none;
     padding-left:5vw;
     padding-right:5vw;
     overflow: hidden;
@@ -46,6 +45,23 @@
     padding-bottom:2vh;
     padding-left:2vw;
     padding-right:2vw;
+}
+
+.contain {
+    contain:content;
+}
+
+.nolist-style {
+    list-style-type: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.textcenter {
+    text-align: center;
 }
 
 /* navbar classes */
