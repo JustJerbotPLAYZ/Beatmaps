@@ -1,4 +1,10 @@
 /* universal classes */
+body {
+    font-family: 'BarlowSemiCondensedRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
 .sticky {
     position: sticky;
 }
@@ -47,6 +53,10 @@
     padding-right: 2vw;
 }
 
+.pagewidth {
+    width:92%;
+}
+
 .contain {
     contain: content;
 }
@@ -91,7 +101,7 @@ body {
 }
 
 .title {
-    padding-top: 22vh;
+    padding-top: 20vh;
     color: #20C20E;
     font-size: clamp(32px, 7.5vh, 78px);
 
@@ -129,8 +139,28 @@ body {
 }
 
 .elevatorpitch {
-    font-family: 'BarlowSemiCondensedRegular';
-    font-weight: normal;
-    font-style: normal;
     font-size: clamp(16px, 3vh, 32px);
+    padding-top:1.5vh;
+}
+
+.s-icon {
+    height:5vh;
+    padding-top:0.5vh;
+}
+
+.list-same-row-ul {
+    overflow: hidden;
+}
+
+.list-same-row-li {
+    padding-right:1vw;
+    float: left;
+}
+
+.list-same-row-a {
+    display: block;
+}
+
+.socials {
+    font-size:clamp(8px, 32px, 32px);
 }
