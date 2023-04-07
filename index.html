@@ -15,14 +15,19 @@
 
     <!-- font import -->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/ledfont-sharp" type="text/css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/barlow" type="text/css" />
+
+    <!-- Fontawesome import -->
+    <script src="https://kit.fontawesome.com/65f6b022d7.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <ul class="reset">
+    <ul class="reset nolist-style">
         <li>
             <nav>
-                <ul class="navbar">
-                    <li></li>
+                <ul class="navbar nolist-style">
+                    <li><a>test</a></li>
                 </ul>
             </nav>
         </li>
@@ -40,30 +45,86 @@
         <li>
             <div class="content parent">
                 <div class="child">
-                    <ul class="cl">
-                        <li class="cl-item">
+                    <div class="grid-container">
+                        <div class="container parent contain">
+                            <p class="textcenter elevatorpitch">
+                                Mijn naam is Jeroen Suurmond, een 17-jarige creatieve probleemoplosser uit Goes met
+                                een
+                                passie
+                                voor
+                                ruimtevaart, luchtindustrie, gaming en auto's. Of ik nu een game speel of een
+                                softwareprobleem
+                                oplos, ik rust niet voordat ik de oplossing vind. Daarom heb ik gekozen voor een
+                                carrière als
+                                softwareontwikkelaar. Mijn droom is om iets toe te kunnen voegen aan een (of
+                                meerdere) van deze
+                                sectoren, maar ik zou het ook leuk vinden om een andere sector te ontdekken.
+                            </p>
+                        </div>
+
+                        <div class="container">
+                            <image class="profilepicture" src="img/me.png"></image>
+                        </div>
+                    </div>
+                    <div class="grid-container">
+                        <div class="container grid-item-2">
+                            <ul class="nolist-style reset">
+                                <li class="form">
+                                    <label for="name" class="label">Name:</label>
+                                    <input class="input-field" type="text" id="name" name="name">
+                                </li>
+                                <li class="form">
+                                    <label for="message" class="label">Message:</label>
+                                    <textarea class="input-field" id="message" name="message" rows="4"></textarea>
+                                </li>
+                                <li class="form">
+                                    <button type="button" class="button">Submit</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
                             <div class="container">
-                                <p class="textcenter">
-                                    Mijn naam is Jeroen Suurmond, een 17-jarige creatieve probleemoplosser uit Goes met
-                                    een
-                                    passie
-                                    voor
-                                    ruimtevaart, luchtindustrie, gaming en auto's. Of ik nu een game speel of een
-                                    softwareprobleem
-                                    oplos, ik rust niet voordat ik de oplossing vind. Daarom heb ik gekozen voor een
-                                    carrière als
-                                    softwareontwikkelaar. Mijn droom is om iets toe te kunnen voegen aan een (of
-                                    meerdere) van deze
-                                    sectoren, maar ik zou het ook leuk vinden om een andere sector te ontdekken.
+                                <p>
+                                    Wil je met me praten? Of ben je beniewd wat ik aan het doen ben?<br>Klik dan een van de links hieronder om er achter te komen!
                                 </p>
                             </div>
-                        </li>
-                        <li class="cl-item">
                             <div class="container">
-                                <image class="profilepicture" src="img/me.png"></image>
+                                <ul class="nolist-style list-same-row-ul reset">
+                                    <li class="list-same-row-li">
+                                        <a href="https://github.com/JustJerbotPLAYZ" target="_blank"
+                                            title="Check out some of my projects">
+                                            <image class="s-icon" src="img/icons/github-mark-white.png"></image>
+                                        </a>
+                                    </li>
+                                    <li class="list-same-row-li">
+                                        <a href="https://www.linkedin.com/in/jeroen-suurmond-625769271/" target="_blank"
+                                            title="Visit my LinkedIn">
+                                            <image class="s-icon" src="img/icons/LI-In-Bug.png"></image>
+                                        </a>
+                                    </li>
+                                    <li class="list-same-row-li">
+                                        <a href="https://www.discordapp.com/users/529445990730563645" target="_blank">
+                                            <image class="s-icon" src="img/icons/icon_clyde_white_RGB.png"
+                                                title="See what I'm up to on Discord"></image>
+                                        </a>
+                                    </li>
+                                    <li class="list-same-row-li">
+                                        <a href="mailto:j.d.suurmond@icloud.com" target="_blank">
+                                            <image class="s-icon" src="img/icons/at-icon-png-10.jpg"
+                                                title="Contact me via mail"></image>
+                                        </a>
+                                    </li>
+                                    <li class="list-same-row-li">
+                                        <a href="https://open.spotify.com/user/0dujf1epnpackn907wgz77aux?si=3419c781e5fd4817"
+                                            target="_blank">
+                                            <image class="s-icon" src="img/icons/Spotify_Logo_RGB_White.png"
+                                                title="Enjoy my taste in music"></image>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </li>

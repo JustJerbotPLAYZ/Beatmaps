@@ -1,6 +1,12 @@
 /* universal classes */
-.sticky{
-    position:sticky;
+body {
+    font-family: 'BarlowSemiCondensedRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sticky {
+    position: sticky;
 }
 
 .parent {
@@ -16,14 +22,13 @@
 }
 
 .reset {
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .cl {
-    list-style-type: none;
-    padding-left:5vw;
-    padding-right:5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     overflow: hidden;
 }
 
@@ -36,30 +41,63 @@
 }
 
 .container {
-    background-color:#18181a;
-    border-radius:15px;
-    margin-top:2vh;
-    margin-bottom:2vh;
-    margin-left:2vw;
-    margin-right:2vw;
-    padding-top:2vh;
-    padding-bottom:2vh;
-    padding-left:2vw;
-    padding-right:2vw;
+    background-color: #18181a;
+    border-radius: 15px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.contain {
+    contain: content;
+}
+
+.nolist-style {
+    list-style-type: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item-1 {
+    grid-column-end: span 1;
+}
+
+.grid-item-2 {
+    grid-column-end: span 2;
+}
+
+.grid-item-3 {
+    grid-column-end: span 3;
+}
+
+.textcenter {
+    text-align: center;
 }
 
 /* navbar classes */
 
 nav {
-    background-color:#1f1f21;
-    position:fixed;
-    top:0px;
-    z-index:9999;
-    width:100%;
+    background-color: #1f1f21;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    width: 100%;
 }
 
 .navbar {
-    height:clamp();
+    height: clamp();
+}
+
+.label {
+    padding-bottom:1vh;
 }
 
 /* specific classes*/
@@ -75,9 +113,9 @@ body {
 }
 
 .title {
-    padding-top: 22vh;
+    padding-top: 20vh;
     color: #20C20E;
-    font-size: 7.5vh;
+    font-size: clamp(32px, 7.5vh, 78px);
 
     font-family: 'ledfontsharpRegular';
     font-weight: normal;
@@ -86,7 +124,7 @@ body {
 
 .subtitle {
     color: #20C20E;
-    font-size: clamp(2.5vh, 10px, 200px);
+    font-size: clamp(16px, 2.5vh, 39px);
 
     font-family: 'ledfontsharpRegular';
     font-weight: normal;
@@ -102,12 +140,63 @@ body {
 }
 
 .content {
-    color:rgb(230, 230, 230);
-    font-size:clamp(16px,2vh,48px);
+    color: rgb(230, 230, 230);
+    font-size: clamp(16px, 2vh, 48px);
 }
 
 .profilepicture {
-    height:25vh;
-    border-radius:50%;
+    height: 25vh;
+    border-radius: 50%;
     box-shadow: 1vh 1vh 1vh black;
+}
+
+.elevatorpitch {
+    font-size: clamp(16px, 3vh, 32px);
+}
+
+.s-icon {
+    height: 3.5vh;
+    padding-top: 0.5vh;
+}
+
+.list-same-row-ul {
+    overflow: hidden;
+}
+
+.list-same-row-li {
+    padding-right: 1vw;
+    float: left;
+}
+
+.list-same-row-a {
+    display: block;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.5vh 0.75vw;
+    border: 1px solid #ccc;
+    border-radius: 7.5px;
+    box-sizing: border-box;
+}
+
+.button {
+    border:none;
+    width: 25%;
+    padding: 0.5vh 0.75vw;
+    border-radius: 7.5px;
+    cursor: pointer;
+    background-color:#6f717a;
+}
+
+.button:hover {
+    background-color:#585a61;
+}
+
+.form {
+    padding-bottom: 2vh;
+}
+
+.label {
+    padding-bottom:1vh;
 }
