@@ -1,4 +1,5 @@
 /* universal classes */
+
 body {
     font-family: 'BarlowSemiCondensedRegular';
     font-weight: normal;
@@ -61,21 +62,26 @@ body {
     list-style-type: none;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
+.grid-container {}
 
-.grid-item-1 {
-    grid-column-end: span 1;
-}
+@media only screen and (min-width: 400px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 
-.grid-item-2 {
-    grid-column-end: span 2;
-}
 
-.grid-item-3 {
-    grid-column-end: span 3;
+    .grid-item-1 {
+        grid-column-end: span 1;
+    }
+
+    .grid-item-2 {
+        grid-column-end: span 2;
+    }
+
+    .grid-item-3 {
+        grid-column-end: span 3;
+    }
 }
 
 .textcenter {
@@ -97,7 +103,7 @@ nav {
 }
 
 .label {
-    padding-bottom:1vh;
+    padding-bottom: 1vh;
 }
 
 /* specific classes*/
@@ -159,6 +165,12 @@ body {
     padding-top: 0.5vh;
 }
 
+.socials {
+    font-size: clamp(12px, 2.5vh, 24px);
+    margin: 0px;
+    padding: 0px;
+}
+
 .list-same-row-ul {
     overflow: hidden;
 }
@@ -181,16 +193,16 @@ body {
 }
 
 .button {
-    border:none;
+    border: none;
     width: 25%;
     padding: 0.5vh 0.75vw;
     border-radius: 7.5px;
     cursor: pointer;
-    background-color:#6f717a;
+    background-color: #6f717a;
 }
 
 .button:hover {
-    background-color:#585a61;
+    background-color: #585a61;
 }
 
 .form {
@@ -198,5 +210,5 @@ body {
 }
 
 .label {
-    padding-bottom:1vh;
+    padding-bottom: 1vh;
 }
