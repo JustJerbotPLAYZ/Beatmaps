@@ -6,6 +6,12 @@ body {
     font-style: normal;
 }
 
+.inline-block {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
 .sticky {
     position: sticky;
 }
@@ -62,30 +68,45 @@ body {
     list-style-type: none;
 }
 
-.grid-container {}
-
-@media only screen and (min-width: 400px) {
+.grid-container {
+    display: block; /* standaard eigenschap voor schermen kleiner dan 400px */
+  }
+  
+  @media only screen and (min-width: 900px) {
     .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+    .grid-container-2 {
         display: grid;
-        grid-template-columns: auto auto auto;
-    }
+        grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+      }
+      .grid-container-3 {
+        display: grid;
+        grid-template-columns: calc(100%/2) calc(100%/2);
+      }
+  }
 
+.grid-item-1 {
+    grid-column-end: span 1;
+}
 
-    .grid-item-1 {
-        grid-column-end: span 1;
-    }
+.grid-item-2 {
+    grid-column-end: span 2;
+}
 
-    .grid-item-2 {
-        grid-column-end: span 2;
-    }
-
-    .grid-item-3 {
-        grid-column-end: span 3;
-    }
+.grid-item-3 {
+    grid-column-end: span 3;
 }
 
 .textcenter {
     text-align: center;
+}
+
+.content-center {
+    display: flexbox;
+    justify-content: center;
+    align-content:center;
 }
 
 /* navbar classes */
