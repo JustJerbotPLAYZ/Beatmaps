@@ -70,15 +70,14 @@ body {
 
 .grid-container-3a {
     display: block;
-    /* standaard eigenschap voor schermen kleiner dan 400px */
 }
 
 .grid-conainer-3 {
-    display:block;
+    display: block;
 }
 
 .grid-container-2 {
-    display:block;
+    display: block;
 }
 
 @media only screen and (min-width: 900px) {
@@ -245,6 +244,6 @@ body {
     width: 40%;
 }
 
-.project-1:hover {
-    background-color: #20C20E;
+.project {
+    
 }
