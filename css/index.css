@@ -68,24 +68,34 @@ body {
     list-style-type: none;
 }
 
-.grid-container {
-    display: block; /* standaard eigenschap voor schermen kleiner dan 400px */
-  }
-  
-  @media only screen and (min-width: 900px) {
-    .grid-container {
-      display: grid;
-      grid-template-columns: auto auto auto;
+.grid-container-3a {
+    display: block;
+}
+
+.grid-conainer-3 {
+    display: block;
+}
+
+.grid-container-2 {
+    display: block;
+}
+
+@media only screen and (min-width: 900px) {
+    .grid-container-3a {
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
-    .grid-container-2 {
+
+    .grid-container-3 {
         display: grid;
         grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
-      }
-      .grid-container-3 {
+    }
+
+    .grid-container-2 {
         display: grid;
         grid-template-columns: calc(100%/2) calc(100%/2);
-      }
-  }
+    }
+}
 
 .grid-item-1 {
     grid-column-end: span 1;
@@ -101,12 +111,6 @@ body {
 
 .textcenter {
     text-align: center;
-}
-
-.content-center {
-    display: flexbox;
-    justify-content: center;
-    align-content:center;
 }
 
 /* navbar classes */
@@ -181,6 +185,10 @@ body {
     font-size: clamp(16px, 3vh, 32px);
 }
 
+.aboutme {
+    font-size: clamp(12px, 3vh, 24px);
+}
+
 .s-icon {
     height: 3.5vh;
     padding-top: 0.5vh;
@@ -232,4 +240,25 @@ body {
 
 .label {
     padding-bottom: 1vh;
+}
+
+a:link {
+    color:#0066CC;
+}
+
+a:visited {
+    color:#0066CC;
+}
+a:visited:hover {
+    color:#6c006c;
+}
+
+a:hover {
+    color:#0056ac;
+}
+
+/* projects tab */
+
+.project-icon {
+    width: 75%;
 }
