@@ -267,3 +267,10 @@ a:hover {
 .project-icon {
     width: 75%;
 }
+
+th {
+    width:calc(100%/7);
+}
+td {
+    width:calc(100%/7)
+}
