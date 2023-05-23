@@ -1,6 +1,6 @@
 /* universal classes */
 
-body {
+body,p {
     font-family: 'BarlowSemiCondensedRegular';
     font-weight: normal;
     font-style: normal;
@@ -94,6 +94,11 @@ body {
     .grid-container-2 {
         display: grid;
         grid-template-columns: calc(100%/2) calc(100%/2);
+    }
+
+    .grid-container-4 {
+        display: grid;
+        grid-template-columns: 10% 30% 30% 30%;
     }
 }
 
@@ -271,8 +276,52 @@ a:hover {
 }
 
 th {
-    width:calc(100%/7);
+    width: calc(100%/7);
 }
+
 td {
-    width:calc(100%/7)
+    width: calc(100%/7)
+}
+
+.baseprogressbar {
+    margin: auto;
+    height: 25px;
+    width: 90%;
+    background-color: #585a61;
+    border-radius: 15px;
+
+}
+
+.progressbartext {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 5%;
+}
+
+.progress-java {
+    border-radius: 15px;
+    height: 25px;
+    background-color: #6cb55d;
+    width: 60%;
+}
+
+.progress-fed {
+    border-radius: 15px;
+    height: 25px;
+    background-color: #6cb55d;
+    width: 60%;
+}
+
+.progress-js {
+    border-radius: 15px;
+    height: 25px;
+    background-color: #6cb55d;
+    width: 40%;
+}
+
+.progress-mysql {
+    border-radius: 15px;
+    height: 25px;
+    background-color: #6cb55d;
+    width: 40%;
 }
