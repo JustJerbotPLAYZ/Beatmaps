@@ -1,6 +1,7 @@
 /* universal classes */
 
-body,p {
+body,
+p {
     font-family: 'BarlowSemiCondensedRegular';
     font-weight: normal;
     font-style: normal;
@@ -289,7 +290,6 @@ td {
     width: 90%;
     background-color: #585a61;
     border-radius: 15px;
-
 }
 
 .progressbartext {
