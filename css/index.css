@@ -1,6 +1,7 @@
 /* universal classes */
 
-body {
+body,
+p {
     font-family: 'BarlowSemiCondensedRegular';
     font-weight: normal;
     font-style: normal;
@@ -94,6 +95,11 @@ body {
     .grid-container-2 {
         display: grid;
         grid-template-columns: calc(100%/2) calc(100%/2);
+    }
+
+    .grid-container-4 {
+        display: grid;
+        grid-template-columns: 10% 30% 30% 30%;
     }
 }
 
@@ -194,6 +200,8 @@ body {
     padding-top: 0.5vh;
 }
 
+
+
 .socials {
     font-size: clamp(12px, 2.5vh, 24px);
     margin: 0px;
@@ -243,22 +251,77 @@ body {
 }
 
 a:link {
-    color:#0066CC;
+    color: #0066CC;
 }
 
 a:visited {
-    color:#0066CC;
+    color: #0066CC;
 }
+
 a:visited:hover {
-    color:#6c006c;
+    color: #6c006c;
 }
 
 a:hover {
-    color:#0056ac;
+    color: #0056ac;
 }
 
-/* projects tab */
+.map {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 15px;
+}
 
 .project-icon {
     width: 75%;
+}
+
+th {
+    width: calc(100%/7);
+}
+
+td {
+    width: calc(100%/7)
+}
+
+.baseprogressbar {
+    margin: auto;
+    height: 25px;
+    width: 90%;
+    background-color: #585a61;
+    border-radius: 15px;
+}
+
+.progressbartext {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 5%;
+}
+
+.progress-java {
+    border-radius: 15px;
+    height: 25px;
+    background-color: #6cb55d;
+    width: 60%;
+}
+
+.progress-fed {
+    border-radius: 15px;
+    height: 25px;
+    background-color: #6cb55d;
+    width: 60%;
+}
+
+.progress-js {
+    border-radius: 15px;
+    height: 25px;
+    background-color: #6cb55d;
+    width: 40%;
+}
+
+.progress-mysql {
+    border-radius: 15px;
+    height: 25px;
+    background-color: #6cb55d;
+    width: 40%;
 }
